@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "https://e5.ai/app_schema",
+  "type": "object",
+  "extends": {
+      "existingJavaType": "com.e5.platform.core.config.DelegateeConfig"
+  },
+  "properties": {
+      "sampleAppField": {
+          "type": "string",
+          "minLength": 1
+      }
+  },
+  "required": [
+      "sampleAppField"
+  ]
+}

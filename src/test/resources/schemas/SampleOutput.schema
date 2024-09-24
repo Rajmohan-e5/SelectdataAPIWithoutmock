@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "type" :"object",
+  "properties" : {
+    "payloadId" : {
+      "type" : "string",
+      "errorMessage": "Payload Id is not available",
+      "minItems": 1
+    },
+    "payloadDescription": {
+      "type" : "string",
+      "errorMessage": "Payload Description length has to be minimum 1",
+      "minLength": 1
+    }
+  },
+  "required" : [ "payloadId", "payloadDescription" ]
+}
